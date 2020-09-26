@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Kareem,Abdul
+ * @author Kareem,Abdul, Mohamad
  */
 public class DoubleLinkedList <A> {
 
