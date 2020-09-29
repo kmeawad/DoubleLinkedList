@@ -1,6 +1,5 @@
 
 function shape(type, height, width, displacement){
-    //let triangle = "";
     type(height, width, displacement);
 }
 
@@ -26,7 +25,6 @@ function rectangle(height , width, displacement){
         }
         console.log(rectangle);
 }
-
 
 
 
