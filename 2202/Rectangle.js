@@ -26,6 +26,24 @@ function rectangle(height , width, displacement){
         console.log(rectangle);
 }
 
+let triangle = function(height,displacement){
+    triangle =""
+    for (let h=0;h<height;h++){
+        let line = "\n";
+
+        let offset="";
+        for(let d=0;d<displacement;d++)
+            offset += " ";
+        line +=offset;
+
+        for (let s=0;s<h+1;s++)
+            line += "*";
+
+        triangle +=line;
+    }
+    console.log(triangle);
+};
+triangle(10,10);
 
 
 shape(rectangle, 5, 5, 10);
