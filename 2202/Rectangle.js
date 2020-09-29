@@ -43,10 +43,8 @@ let triangle = function(height,displacement){
     }
     console.log(triangle);
 }
-triangle(10,10);
 
-
+// (type, height, width, displacement)
 shape(rectangle, 5, 5, 10);
-//shape(6, 6, 1, 1, 10);
-//shape(2, 2, 1, 1, 20);
-//shape(3, 3, 1, 1, 20);
+shape(triangle, 5, 10);
+
