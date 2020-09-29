@@ -1,6 +1,6 @@
 
 function shape(type, height, width, displacement){
-    let triangle = "";
+    //let triangle = "";
     type(height, width, displacement);
 }
 
@@ -26,9 +26,9 @@ function rectangle(height , width, displacement){
         }
         console.log(rectangle);
 }
-//if (type == 1){
 
-//}
+
+
 
 shape(rectangle, 5, 5, 10);
 //shape(6, 6, 1, 1, 10);
