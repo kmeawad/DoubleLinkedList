@@ -27,7 +27,7 @@ function rectangle(height , width, displacement){
 }
 
 let triangle = function(height,displacement){
-    triangle =""
+    triangle = "";
     for (let h=0;h<height;h++){
         let line = "\n";
 
@@ -42,7 +42,7 @@ let triangle = function(height,displacement){
         triangle +=line;
     }
     console.log(triangle);
-};
+}
 triangle(10,10);
 
 
