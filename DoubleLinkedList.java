@@ -87,4 +87,33 @@ public class DoubleLinkedList <A> {
             currentNode = currentNode.getprev();
         }
     }
+    public Node<A> deleteFirst()
+	    {
+	        Node temp = head;
+
+	        if(head.next==null)
+	            tail = null;
+	        else
+	            {head.prevNode = null;
+	            head = head.next;}
+
+	        return temp;
+	    }
+    public Node<A> deletetFirst() 
+	    { 
+	        if (head == null) 
+	            return null; 
+	  
+	        if (head.next == null) { 
+	            return null; 
+	        } 
+	         
+	        Node secondLast = head; 
+	        while (secondLast.next.next != null) 
+	            secondLast = secondLast.next; 
+	   
+	        secondLast.next = null; 
+	  
+	        return head; 
+	    } 
 }
