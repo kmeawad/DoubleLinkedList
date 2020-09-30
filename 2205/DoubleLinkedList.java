@@ -6,12 +6,13 @@
 
 /**
  *
- * @author Kareem,Abdul, Mohamad
+ * @author m23a2
  */
-public class DoubleLinkedList <A> {
+
+    public class DoubleLinkedList <A> {
 
     //change, moe was here
-   private static class Node<A>{
+    private static class Node<A>{
         Node next;
         private A Input;
         private Node<A> nextNode;
@@ -75,10 +76,10 @@ public class DoubleLinkedList <A> {
 	    {
 	        Node temp = head;
 
-	        if(head==null)
+	        if(head.next==null)
 	            tail = null;
 	        else
-	            {head = null;
+	            {head.prevNode = null;
 	            head = head.next;}
 
 	        return temp;
@@ -86,20 +87,13 @@ public class DoubleLinkedList <A> {
 	// needs to be fixed
     public Node<A> deletetLast() 
 	    { 
-	        if(head == null) {  
-            System.out.println("List is empty");  
-            return null;
-                }
-                else {  
-		 if(head != tail) {  
-                head = head.next;  
-            }  
+	        if (head == null) 
+	            return null; 
+
+	        if (head.next == null) { 
+	            return null; 
 	        } 
-                  
-                         if(head == tail){
-                head = tail = null;  
-                         }
-            
+
 	        Node secondLast = head; 
 	        while (secondLast.next.next != null) 
 	            secondLast = secondLast.next; 
