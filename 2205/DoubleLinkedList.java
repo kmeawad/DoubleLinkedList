@@ -12,7 +12,8 @@ public class DoubleLinkedList <A> {
 
     //change, moe was here
     private static class Node<A>{
-        private A Input;
+        Node next;
+	private A Input;
         private Node<A> nextNode;
         private Node<A> prevNode;
 
