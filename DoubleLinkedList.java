@@ -99,7 +99,7 @@ public class DoubleLinkedList <A> {
 
 	        return temp;
 	    }
-    public Node<A> deletetFirst() 
+    public Node<A> deletetLast() 
 	    { 
 	        if (head == null) 
 	            return null; 
