@@ -11,9 +11,9 @@
 public class DoubleLinkedList <A> {
 
     //change, moe was here
-    private static class Node<A>{
+   private static class Node<A>{
         Node next;
-	private A Input;
+        private A Input;
         private Node<A> nextNode;
         private Node<A> prevNode;
 
@@ -75,10 +75,10 @@ public class DoubleLinkedList <A> {
 	    {
 	        Node temp = head;
 
-	        if(head.next==null)
+	        if(head==null)
 	            tail = null;
 	        else
-	            {head.prevNode = null;
+	            {head = null;
 	            head = head.next;}
 
 	        return temp;
@@ -88,18 +88,18 @@ public class DoubleLinkedList <A> {
 	    { 
 	        if(head == null) {  
             System.out.println("List is empty");  
-            return;  
-        }  
-        else {  
+            return null;
+                }
+                else {  
 		 if(head != tail) {  
                 head = head.next;  
             }  
-		 else {  
-                head = tail = null;  
-            }  
-	}
 	        } 
-
+                  
+                         if(head == tail){
+                head = tail = null;  
+                         }
+            
 	        Node secondLast = head; 
 	        while (secondLast.next.next != null) 
 	            secondLast = secondLast.next; 
@@ -127,3 +127,4 @@ public class DoubleLinkedList <A> {
         }
     }
 }
+
