@@ -12,7 +12,7 @@ function rectangle(height , width, displacement){
 
             //Create an offset
             let offset = "";
-            for(let o =0; o<=displacement;o++) offset += " ";
+            for(let d=0; d<displacement;d++) offset += " ";
 
             line+=offset;
 
