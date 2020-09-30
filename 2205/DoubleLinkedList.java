@@ -69,7 +69,8 @@ public class DoubleLinkedList <A> {
         tail = newNode;
         size++;
     }
-        public Node<A> deleteFirst()
+	//needs to be fixed
+    public Node<A> deleteFirst()
 	    {
 	        Node temp = head;
 
@@ -81,6 +82,7 @@ public class DoubleLinkedList <A> {
 
 	        return temp;
 	    }
+	// needs to be fixed
     public Node<A> deletetLast() 
 	    { 
 	        if (head == null) 
