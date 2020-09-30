@@ -86,11 +86,18 @@ public class DoubleLinkedList <A> {
 	// needs to be fixed
     public Node<A> deletetLast() 
 	    { 
-	        if (head == null) 
-	            return null; 
-
-	        if (head.next == null) { 
-	            return null; 
+	        if(head == null) {  
+            System.out.println("List is empty");  
+            return;  
+        }  
+        else {  
+		 if(head != tail) {  
+                head = head.next;  
+            }  
+		 else {  
+                head = tail = null;  
+            }  
+	}
 	        } 
 
 	        Node secondLast = head; 
