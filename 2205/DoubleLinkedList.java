@@ -4,11 +4,6 @@
  * and open the template in the editor.
  */
 
-/**
- *
- * @author m23a2
- */
-
     public class DoubleLinkedList <A> {
 
     //change, moe was here
@@ -86,13 +81,18 @@
 	    }
 	// needs to be fixed
     public Node<A> deletetLast() 
-	    { 
-	        if (head == null) 
-	            return null; 
-
-	        if (head.next == null) { 
-	            return null; 
-	        } 
+	    {if(head == null) {  
+            System.out.println("List is empty");  
+            return null;  
+        }  
+        else {  
+		 if(head != tail) {  
+                head = head.next;  
+            }  
+		 else {  
+                head = tail = null;  
+            }
+                }
 
 	        Node secondLast = head; 
 	        while (secondLast.next.next != null) 
@@ -119,6 +119,6 @@
             System.out.println(currentNode.getInput());
             currentNode = currentNode.getprev();
         }
-    }
+    } 
 }
 
