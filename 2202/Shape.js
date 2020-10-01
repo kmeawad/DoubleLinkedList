@@ -1,4 +1,3 @@
-
 function shape(type, height, width, displacement){
     type(height, width, displacement);
 }
@@ -12,7 +11,7 @@ function rectangle(height , width, displacement){
 
             //Create an offset
             let offset = "";
-            for(let d=0; d<displacement;d++) offset += " ";
+            for(let d =0; d<displacement;d++) offset += " ";
 
             line+=offset;
 
@@ -44,7 +43,6 @@ let triangle = function(height,displacement){
     console.log(triangle);
 }
 
-// (type, height, width, displacement)
-shape(rectangle, 5, 5, 10); // or rectangle(5, 5, 10);
+rectangle(5, 5, 10); // or shape(rectangle, 5,5,10);
+rectangle( 2,2, 5);
 shape(triangle, 5, 10);
-
