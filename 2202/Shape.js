@@ -45,6 +45,6 @@ let triangle = function(height,displacement){
 }
 
 // (type, height, width, displacement)
-shape(rectangle, 5, 5, 10);
+shape(rectangle, 5, 5, 10); // or rectangle(5, 5, 10);
 shape(triangle, 5, 10);
 
