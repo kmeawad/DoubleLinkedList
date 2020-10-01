@@ -26,7 +26,7 @@ function rectangle(height , width, displacement){
 }
 
 let triangle = function(height,displacement){
-    triangle = "";
+    let triangle = "";
     for (let h=0;h<height;h++){
         let line = "\n";
 
@@ -46,3 +46,4 @@ let triangle = function(height,displacement){
 rectangle(5, 5, 10); // or shape(rectangle, 5,5,10);
 rectangle( 2,2, 5);
 shape(triangle, 5, 10);
+triangle(5, 10)
