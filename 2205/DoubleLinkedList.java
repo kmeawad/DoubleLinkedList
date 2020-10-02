@@ -66,8 +66,28 @@
         tail = newNode;
         size++;
     }
-	//needs to be fixed
-    public Node<A> deleteFirst()
+
+    
+    public void printAll()
+    {
+        Node<A> currentNode = head;
+        while(currentNode != null)
+        {
+            System.out.println(currentNode.getInput());
+            currentNode = currentNode.getNext();
+        }
+    }
+    public void printReverse(){
+        Node<A> currentNode = tail;
+        while(currentNode != null)
+        {
+            System.out.println(currentNode.getInput());
+            currentNode = currentNode.getprev();
+        }
+    } 
+}
+	//doesnt work
+  /*  public Node<A> deleteFirst()
 	    {
 	        Node temp = head;
 
@@ -80,7 +100,7 @@
 	        return temp;
 	    }
 	// needs to be fixed
-    /*public Node<A> deletetLast() 
+    public Node<A> deletetLast() 
 	    {if(head == null) {  
             System.out.println("List is empty");  
             return null;  
@@ -101,7 +121,7 @@
 	        secondLast.next = null; 
 
 	        return head; 
-	    }*/
+	    }
 	    void deleteNode(struct Node **head_ref, int key) 
 { 
     // Store head node 
@@ -113,24 +133,5 @@
         *head_ref = temp->next;   // Changed head 
         free(temp);               // free old head 
         return; 
-    }
-    
-    public void printAll()
-    {
-        Node<A> currentNode = head;
-        while(currentNode != null)
-        {
-            System.out.println(currentNode.getInput());
-            currentNode = currentNode.getNext();
-        }
-    }
-    public void printReverse(){
-        Node<A> currentNode = tail;
-        while(currentNode != null)
-        {
-            System.out.println(currentNode.getInput());
-            currentNode = currentNode.getprev();
-        }
-    } 
-}
+    }*/
 
