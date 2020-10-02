@@ -7,8 +7,8 @@ public class Test {
     list.addFirst("Kareem");
     list.addLast("Meawad");
     list.printAll();
-    list.deleteFirst();
-    list.deletetLast();
+    list.removeFirst();
+    list.removetLast();
     list.printAll();
     
     }
