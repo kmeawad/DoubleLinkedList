@@ -1,0 +1,15 @@
+public class Test {
+    public static void main(String[] args){
+    DoubleLinkedList<String> list = new DoubleLinkedList<>();
+    
+    list.addFirst("no");
+    list.addLast("yes");
+    list.addFirst("Kareem");
+    list.addLast("Meawad");
+    list.printAll();
+    list.deleteFirst();
+    list.deletetLast();
+    list.printAll();
+    
+    }
+}
