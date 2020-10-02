@@ -66,6 +66,29 @@
         tail = newNode;
         size++;
     }
+	  
+public A remove(Node<A> node){
+        Node<A> predecessor = node.getprev();
+        Node<A> succesor = node.getNext();
+        predecessor.setNext(succesor);
+        succesor.setprev(predecessor);
+        size--;
+        return node.getInput();
+    }
+
+    public A removeFirst(){
+        if(isEmpty()){
+            return null;
+        }
+        return remove(head.getNext());
+    }
+
+    public A removeLast(){
+        if (isEmpty()){
+            return null;
+        }
+        return remove(tail.getprev());
+    }
 
     
     public void printAll()
