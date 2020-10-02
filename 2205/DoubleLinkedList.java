@@ -80,7 +80,7 @@
 	        return temp;
 	    }
 	// needs to be fixed
-    public Node<A> deletetLast() 
+    /*public Node<A> deletetLast() 
 	    {if(head == null) {  
             System.out.println("List is empty");  
             return null;  
@@ -101,7 +101,19 @@
 	        secondLast.next = null; 
 
 	        return head; 
-	    }
+	    }*/
+	    void deleteNode(struct Node **head_ref, int key) 
+{ 
+    // Store head node 
+    struct Node* temp = *head_ref, *prev; 
+  
+    // If head node itself holds the key to be deleted 
+    if (temp != NULL && temp->data == key) 
+    { 
+        *head_ref = temp->next;   // Changed head 
+        free(temp);               // free old head 
+        return; 
+    }
     
     public void printAll()
     {
