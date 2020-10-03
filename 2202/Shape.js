@@ -1,5 +1,5 @@
 function shape(type, height, width){
-    type(height, width);
+    function type(height, width){}
 }
 
 let displacementA = 10;
@@ -87,7 +87,7 @@ function triangleB (height){
     console.log(triangleB);
 }
 
-shape(rectangleA(5, 5)); //error
-//rectangleB( 10,10);
-//triangleA(10);
-//triangleB(20);
+shape(rectangleA(5, 5));
+shape(rectangleB(10,10));
+shape(triangleA(5));
+shape(triangleB(10));
