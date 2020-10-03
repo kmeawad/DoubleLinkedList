@@ -1,49 +1,93 @@
-function shape(type, height, width, displacement){
-    type(height, width, displacement);
+function shape(type, height, width){
+    type(height, width);
 }
 
-function rectangle(height , width, displacement){
-        let rectangle = "";
-        for(let i = 0; i < height; i++){
-            
-            //Add line
-            line ="\n";
+let displacementA = 10;
+let displacementB = 20;
 
-            //Create an offset
-            let offset = "";
-            for(let d =0; d<displacement;d++) offset += " ";
+function rectangleA(height , width){
+    let rectangleA = "";
+    for(let i = 0; i < height; i++){
 
-            line+=offset;
+        //Add line
+        line ="\n";
 
-            //Add stars 
-            for(let w=0;w<width;w++)
-                line += "*";
-            
-            //Add each line to rectangle
-            rectangle +=line;
-        }
-        console.log(rectangle);
+        //Create an offset
+        let offset = "";
+        for(let d =0; d<displacementA;d++) offset += " ";
+
+        line+=offset;
+
+        //Add stars
+        for(let w=0;w<width;w++)
+            line += "*";
+
+        //Add each line to rectangle
+        rectangleA +=line;
+    }
+    console.log(rectangleA);
 }
 
-function triangle (height,displacement){
-    let triangle = "";
+function rectangleB(height , width){
+    let rectangleB = "";
+    for(let i = 0; i < height; i++){
+
+        //Add line
+        line ="\n";
+
+        //Create an offset
+        let offset = "";
+        for(let d =0; d<displacementB;d++) offset += " ";
+
+        line+=offset;
+
+        //Add stars
+        for(let w=0;w<width;w++)
+            line += "*";
+
+        //Add each line to rectangle
+        rectangleB +=line;
+    }
+    console.log(rectangleB);
+}
+
+function triangleA (height){
+    let triangleA = "";
     for (let h=0;h<height;h++){
         let line = "\n";
 
         let offset="";
-        for(let d=0;d<displacement;d++)
+        for(let d=0;d<displacementA;d++)
             offset += " ";
         line +=offset;
 
         for (let s=0;s<h+1;s++)
             line += "*";
 
-        triangle +=line;
+        triangleA +=line;
     }
-    console.log(triangle);
+    console.log(triangleA);
 }
 
-rectangle(5, 5, 10); // or shape(rectangle, 5,5,10);
-rectangle( 2,2, 5);
-shape(triangle, 5, 10);
-triangle(5, 10);
+function triangleB (height){
+    let triangleB = "";
+    for (let h=0;h<height;h++){
+        let line = "\n";
+
+        let offset="";
+        for(let d=0;d<displacementB;d++)
+            offset += " ";
+        line +=offset;
+
+        for (let s=0;s<h+1;s++)
+            line += "*";
+
+        triangleB +=line;
+    }
+    console.log(triangleB);
+}
+
+shape(rectangleA(5, 5)); //error
+//rectangleB( 10,10);
+//triangleA(10);
+//triangleB(20);
