@@ -87,7 +87,18 @@ function triangleB (height){
     console.log(triangleB);
 }
 
+//10 dimension rectangle
 shape(rectangleA(5, 5));
-shape(rectangleB(10,10));
+shape(rectangleA(15, 15));
+
+//20 dimension rectangle
+shape(rectangleB(5,5));
+shape(rectangleB(15,15));
+
+//10 dimension triangle
 shape(triangleA(5));
-shape(triangleB(10));
+shape(triangleA(15));
+
+//20 dimension triangle
+shape(triangleB(5));
+shape(triangleB(15));
